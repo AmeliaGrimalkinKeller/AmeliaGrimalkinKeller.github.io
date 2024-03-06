@@ -13,11 +13,24 @@ h2 {
     font-size: 3vw;
 }
 
+p {
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+    font-size: 2vw;
+}
+
 body {
     margin: 0%;
     height: 100vh;
     width: 100vw;
     background-color: red;
+}
+
+.language {
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
 }
 
 .content {

@@ -6,16 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="icon.png">
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+            function ChangeLang(language) {
+                let d = document.getElementsByClassName('translate');
+                for (i of d) {
+                    if (i.classList.contains(language)) {
+                        i.style.display = 'block';
+                    } else {
+                        i.style.display = 'none';
+                    }
+                }
+            }
+
+        </script>
     </head>
     <body>
+        <div class="language">
+            <p onclick="ChangeLang('pl')"> PL </p>
+            <p onclick="ChangeLang('de')"> DE </p>
+            <p onclick="ChangeLang('en')"> EN </p>
+        </div>
         <div class="content">
             <h1>Amelia Grimalkin Keller</h1>
             <div class="con">
-                <h2 class="translate en">Portfolio</h2>
+                <h2>Portfolio</h2>
                 <h2 class="translate en">About me</h2>
-                <h2 class="translate de" style="display: none;">Portfolio</h2>
                 <h2 class="translate de" style="display: none;">Über mich</h2>
-                <h2 class="translate pl" style="display: none;">Portfolio</h2>
                 <h2 class="translate pl" style="display: none;">O mnie</h2>
                 <div class="break"></div>
                 <div class="portfolio"></div>
