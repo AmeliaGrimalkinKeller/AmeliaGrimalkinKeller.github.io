@@ -26,6 +26,14 @@ body {
     background-color: red;
 }
 
+.de, .pl {
+    display: none;
+}
+
+.language > p:hover {
+    color: blueviolet;
+}
+
 .language {
     position: fixed;
     display: flex;
