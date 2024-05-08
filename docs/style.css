@@ -13,6 +13,12 @@ h2 {
     font-size: 3vw;
 }
 
+h3 {
+    margin-inline-start: 0.83em;
+    margin-inline-end: 0.83em;
+    font-size: 1.5vw;
+}
+
 p {
     margin-inline-start: 1em;
     margin-inline-end: 1em;
@@ -21,16 +27,14 @@ p {
 
 body {
     margin: 0%;
-    height: 100vh;
-    width: 100vw;
-    background-color: red;
+    background-color: rgb(202, 58, 58);
 }
 
-.de, .pl {
+.de, .pl, .about-me {
     display: none;
 }
 
-.language > p:hover {
+.language > p:hover, .portabout:hover {
     color: blueviolet;
 }
 
@@ -42,8 +46,8 @@ body {
 }
 
 .content {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,6 +55,10 @@ body {
 }
 
 .con {
+    height: 70%;
+}
+
+.con, .portfolio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -58,7 +66,28 @@ body {
     align-items: center;
 }
 
+.portfolio {
+    align-items: flex-start;
+}
+
 .break {
   flex-basis: 100%;
   height: 0;
+}
+
+.not-bold {
+    font-weight: normal;
+}
+
+.port-el {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thin {
+    width: 70%;
+    font-weight: normal;
 }

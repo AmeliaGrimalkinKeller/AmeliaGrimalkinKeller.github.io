@@ -18,24 +18,58 @@
                 }
             }
 
+            function ChangeMe(portabout) {
+                if (portabout == 'about') {
+                    document.getElementById('portfolio').style.display = 'none';
+                    document.getElementById('about-me').style.display = 'block';
+                } else {
+                    document.getElementById('portfolio').style.display = 'flex';
+                    document.getElementById('about-me').style.display = 'none';
+                }
+            }
+
         </script>
     </head>
     <body>
         <div class="language">
-            <p onclick="ChangeLang('pl')"> PL </p>
-            <p onclick="ChangeLang('de')"> DE </p>
-            <p onclick="ChangeLang('en')"> EN </p>
+            <p onclick="ChangeLang('pl')"> <b>PL</b> </p>
+            <p onclick="ChangeLang('de')"> <b>DE</b> </p>
+            <p onclick="ChangeLang('en')"> <b>EN</b> </p>
         </div>
         <div class="content">
             <h1>Amelia Grimalkin Keller</h1>
             <div class="con">
-                <h2>Portfolio</h2>
-                <h2 class="translate en">About me</h2>
-                <h2 class="translate de">Über mich</h2>
-                <h2 class="translate pl">O mnie</h2>
+                <h2 onclick="ChangeMe('port')" class="portabout">Portfolio</h2>
+                <h2 onclick="ChangeMe('about')" class="portabout translate en">About me</h2>
+                <h2 onclick="ChangeMe('about')" class="portabout translate de">Über mich</h2>
+                <h2 onclick="ChangeMe('about')" class="portabout translate pl">O mnie</h2>
                 <div class="break"></div>
-                <div class="portfolio"></div>
-                <div class="about-me"></div>
+                <div id="portfolio" class="portfolio">
+                    <div class="port-el">
+                        <img src="icon.png" width="100vw">
+                        <h3>Test</h3>
+                        <h3>Language: <span class="not-bold">Test</span></h3>
+                        <h3 class="thin">Lorem ipsum uwdoajwdiawdkk jwdjawdjla wdjjl jlwnjdnaj wdjnjdnawnd jawnjdknj wadjkankwdndjawnd  najwndjnwjdjanj nw jnwajn jnawdjk njwnd jawn.</h3>
+                        <h3>Github: <a>Link</a></h3>
+                    </div>
+                    <div class="port-el">
+                        <img src="icon.png" width="100vw">
+                        <h3>Test</h3>
+                        <h3>Language: <span class="not-bold">Test</span></h3>
+                        <h3 class="thin">Lorem ipsum uwdoajwdiawdkk jwdjawdjla wdjjl jlwnjdnaj wdjnjdna wndjawnjdknjwa djkankwdndj awndnajwn djnwjdjanj nw jnwajn jnawdjk njwnd jawn.</h3>
+                    </div>
+                    <div class="port-el">
+                        <img src="icon.png" width="100vw">
+                        <h3>Test</h3>
+                        <h3>Language: <span class="not-bold">Test</span></h3>
+                        <h3 class="thin">Lorem ipsum uwdoajwdiawdkk jwdjawdjla wdjjl jlwnjdnaj wdjnjd nawndjaw  njdknjwa djkankwdndj awndnajw ndjnwjd janj nw jnwajn jnawdjk njwnd jawn.</h3>
+                    </div>
+                </div>
+                <div id="about-me" class="about-me">
+                    <h3 class="translate en" style="white-space: pre-line;">Testing</h3>
+                    <h3 class="translate de" style="white-space: pre-line;">Testend</h3>
+                    <h3 class="translate pl" style="white-space: pre-line;">Testowane</h3>
+                </div>
             </div>
         </div>
     </body>
